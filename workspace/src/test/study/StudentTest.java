@@ -25,12 +25,7 @@ public class StudentTest {
             System.out.println("===============================================");
             System.out.print("다시 입력하시겠습니까? : 1.예    2.아니오    >> ");
             int reset = getUserInputInt();
-            if (reset == 2) {
-                break;
-            }
-            else {
-                continue;
-            }
+            if (reset == 2) break;
         }
         
         float sum = computerScore+jaVaScore+mathScore+operaScore+playScore;
