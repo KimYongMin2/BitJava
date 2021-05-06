@@ -1,4 +1,4 @@
-package day2_test;
+package test.cafe;
 
 import java.util.Scanner;
 
