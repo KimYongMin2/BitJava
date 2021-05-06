@@ -18,7 +18,6 @@ public class StudentMain {
 
     public static String getUserInputString() {
         Scanner scanner = new Scanner(System.in);
-        String inputString = scanner.nextLine();
-        return inputString;
+        return scanner.nextLine();
     }
 }
