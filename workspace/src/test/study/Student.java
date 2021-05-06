@@ -11,6 +11,17 @@ public class Student {
     public int avg = 0;
     public int orderSum = 0;
 
+    public static void main(String[] args) {
+        String studentName;
+        System.out.println("이름을 입력하여주세요");
+        studentName = getUserInputString();
+        Student student = new Student(studentName);
+        student.setSubject();
+        student.setScore();
+        student.setAvg();
+        student.showInfo();
+
+    }
     public Student(String name){
         this.name = name;
     }
