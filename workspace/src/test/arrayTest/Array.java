@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args) {
-        char[][] studentAnswer = new char[3][3];
-        char [] answer = new char[3];
-        char[][] studentAnswerView = new char[3][3];
-        int[] studentScore = new int[3];
+        char[][] studentAnswer = new char[5][10];
+        char [] answer = new char[10];
+        char[][] studentAnswerView = new char[5][10];
+        int[] studentScore = new int[5];
         getStudentAnswer(studentAnswer);
         getAnswer(answer);
         showStudentAnswer(studentAnswer);
@@ -67,9 +67,7 @@ public class Array {
     private static void showAnswer(char[] answer) {
         System.out.println("------------------------------------------------");
         System.out.print("답안 : ");
-        for (int i = 0; i < answer.length; i++) {
-            System.out.print(answer[i] + " ");
-        }
+        for (int i = 0; i < answer.length; i++) System.out.print(answer[i] + " ");
         System.out.println();
     }
 
