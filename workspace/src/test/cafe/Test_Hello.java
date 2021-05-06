@@ -1,4 +1,4 @@
-package test;
+package test.cafe;
 
 public class Test_Hello {
     public static void main(String[] args) {
