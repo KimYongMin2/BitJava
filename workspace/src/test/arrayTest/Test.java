@@ -12,9 +12,7 @@ public class Test {
         for (int i = 0; i < studentAnswer.length; i++) {
             score = 0;
             for (int j = 0; j < studentAnswer[i].length; j++) {
-                if(studentAnswer[i][j]==answer[j]){
-                    score++;
-                }
+                if(studentAnswer[i][j]==answer[j]) score++;
             }
             System.out.println("학생 " + (i+1) + "의 점수 : " + score);
         }
