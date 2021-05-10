@@ -27,5 +27,6 @@ public class BBSItem {
         System.out.println(bbsItem2.seqNo);
         System.out.println(bbsItem3.seqNo);
         System.out.println(bbsItem1.seqNo);
+        System.out.println();
     }
 }
