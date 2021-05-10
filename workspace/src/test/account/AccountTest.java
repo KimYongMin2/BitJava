@@ -1,53 +1,52 @@
-package test;
+package test.account;
 
 class Account{
     public static double interest;
-    static String accountNo;
-    static String accountName;
-    static double balance;
+    private String accountNo;
+    private String accountName;
+    private double balance;
 
-    public static String getAccountNo() {
+    public String getAccountNo() {
         return accountNo;
     }
 
-    public static void setAccountNo(String accountNo) {
-        Account.accountNo = accountNo;
+    public void setAccountNo(String accountNo) {
+        this.accountNo = accountNo;
     }
 
-    public static String getAccountName() {
+    public String getAccountName() {
         return accountName;
     }
 
-    public static void setAccountName(String accountName) {
-        Account.accountName = accountName;
+    public void setAccountName(String accountName) {
+        this.accountName = accountName;
     }
 
-    public static double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public static void setBalance(double balance) {
-        Account.balance = balance;
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     public Account(String accountNo, String accountName, int balance){
-        Account.setAccountNo(accountNo);
-        Account.setAccountName(accountName);
-        Account.setBalance(balance);
+        this.accountNo = accountNo;
+        this.accountName = accountName;
+        this.balance = balance;
     }
 
-    void deposit(int money){
-        double sumMoney = Account.getBalance() + money;
-        Account.setBalance(sumMoney);
+    void deposit(double money){
+        this.balance = this.balance+money;
+
     }
 
-    void withdraw(int money){
-        double subMoney = Account.getBalance() - money;
-        Account.setBalance(subMoney);
+    void withdraw(double money){
+        this.balance = this.balance-money;
     }
 
     void addInterest(){
-        double interestMoney = Account.getBalance() + (Account.getBalance()*interest);
+        this.balance = this.balance*interest + this.balance;
     }
 
 }
@@ -64,7 +63,7 @@ public class AccountTest {
         printAccount(customer1);
         printAccount(customer2);
         System.out.println("이자율의 계산");
-        Account.interest=0.05;
+        Account.interest = 0.05;
         customer1.addInterest(); //저축된 금액=원금+원금*이자율
         customer2.addInterest();//저축된 금액=원금+원금*이자율
         printAccount(customer1);
