@@ -31,22 +31,22 @@ class Account{
     }
 
     public Account(String accountNo, String accountName, int balance){
-        this.accountNo = accountNo;
-        this.accountName = accountName;
-        this.balance = balance;
+        setAccountNo(accountNo);
+        setAccountName(accountName);
+        setBalance(balance);
     }
 
-    void deposit(double money){
-        this.balance = this.balance+money;
+    public void deposit(double money){
+        setBalance(getBalance()+money);
 
     }
 
-    void withdraw(double money){
-        this.balance = this.balance-money;
+    public void withdraw(double money){
+        setBalance(getBalance()-money);
     }
 
-    void addInterest(){
-        this.balance = this.balance*interest + this.balance;
+    public void addInterest(){
+        setBalance(getBalance()*interest + getBalance());
     }
 
 }
