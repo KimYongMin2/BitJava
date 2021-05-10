@@ -47,18 +47,11 @@ class SubscriberInfo{
     }
 
     public SubscriberInfo() {
-        setName("미입력");
-        setId("미입력");
-        setPassword("미입력");
-        setPhoneNo("미입력");
-        setAddress("미입력");
+        this("이름 미입력", "아이디 미입력", "비밀번호 미입력", "전화번호 미입력", "주소 미입력");
+
     }
     public SubscriberInfo(String name,  String id, String password){
-        setName(name);
-        setId(id);
-        setPassword(password);
-        setPhoneNo("미입력");
-        setAddress("미입력");
+        this(name, id, password, "전화번호 미입력", "주소 미입력");
     }
     public SubscriberInfo(String name, String id, String password, String phoneNo, String address){
         setName(name);
