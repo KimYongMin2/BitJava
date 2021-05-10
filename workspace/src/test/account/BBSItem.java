@@ -1,5 +1,7 @@
 package test.account;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 public class BBSItem {
     static int seqNoInfo = 0;
     int seqNo; //일련번호 필드
@@ -24,5 +26,6 @@ public class BBSItem {
         System.out.println(bbsItem1.seqNo);
         System.out.println(bbsItem2.seqNo);
         System.out.println(bbsItem3.seqNo);
+        System.out.println(bbsItem1.seqNo);
     }
 }
