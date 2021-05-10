@@ -5,29 +5,17 @@ class Member{
     static String id;
     static int age;
 
-    public String getName() {
-        return name;
-    }
+    public static String getName() { return name; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public static void setName(String name) { Member.name = name; }
 
-    public String getId() {
-        return id;
-    }
+    public static String getId() { return id; }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+    public static void setId(String id) { Member.id = id; }
 
-    public int getAge() {
-        return age;
-    }
+    public static int getAge() { return age; }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    public static void setAge(int age) { Member.age = age; }
 }
 public class Quiz01 {
     public static void main(String[] args) {
