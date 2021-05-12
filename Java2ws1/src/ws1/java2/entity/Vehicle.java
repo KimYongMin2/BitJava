@@ -4,6 +4,11 @@ public class Vehicle {
     private String modelName;
     private int maxSpeed;
     private int numberLimit;
+    private boolean available;
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
 
     public Vehicle(String modelName, int maxSpeed, int numberLimit){
         this.modelName = modelName;
