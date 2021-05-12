@@ -1,6 +1,6 @@
 package ws1.java2.entity;
 
-public class Airplane {
+public class Airplane extends Vehicle{
 	private String modelName;
 	private int maxSpeed;
 	private int numberLimit;
@@ -8,46 +8,8 @@ public class Airplane {
 	private boolean available;
 
 	public Airplane(String modelName, int maxSpeed, int numberLimit, int numOfEngine){
-		this.modelName = modelName;
-		this.maxSpeed = maxSpeed;
-		this.numberLimit = numberLimit;
+		super(modelName, maxSpeed, numberLimit);
 		this.numOfEngine = numOfEngine;
-	}
-
-	public String getModelName() {
-		return modelName;
-	}
-
-	public void setModelName(String modelName) {
-		this.modelName = modelName;
-	}
-
-	public int getMaxSpeed() {
-		return maxSpeed;
-	}
-
-	public void setMaxSpeed(int maxSpeed) {
-		this.maxSpeed = maxSpeed;
-	}
-
-	public int getNumberLimit() {
-		return numberLimit;
-	}
-
-	public void setNumberLimit(int numberLimit) {
-		this.numberLimit = numberLimit;
-	}
-
-	public int getNumOfEngine() {
-		return numOfEngine;
-	}
-
-	public void setNumOfEngine(int numOfEngine) {
-		this.numOfEngine = numOfEngine;
-	}
-
-	public boolean isAvailable() {
-		return available;
 	}
 
 	public void setAvailable(boolean available) {
@@ -55,10 +17,9 @@ public class Airplane {
 	}
 
 	public void displayInfo() {
-		System.out.println("-------------------------------------------");
-		System.out.println(" ¸ð µ¨ ¸í : " + modelName);
-		System.out.println(" ÃÖ°í¼Óµµ : " + maxSpeed + "km/h");
-		System.out.println(" ÃÖ´ëÁ¤¿ø : " + numberLimit + "¸í");
-		System.out.println(" ¿£Áø°³¼ö : " + numOfEngine + "°³");
+		super.displayInfo();
+		System.out.println(" ì—”ì§„ê°œìˆ˜ : " + this.numOfEngine + "ê°œ");
 	}
 }
+
+
