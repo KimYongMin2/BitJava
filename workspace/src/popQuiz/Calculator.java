@@ -56,6 +56,7 @@ public class Calculator {
             int num1 = inputInt();
             System.out.print("두 번째 숫자를 입력해주세요. : ");
             int num2 = inputInt();
+            /*
             // 아까 저장한 연산자 option을 비교하여 break가 없는 if문으로 비교합니다.
             if (option == '+'){
                 result = operation.add(num1, num2);
@@ -68,8 +69,26 @@ public class Calculator {
             }else{
                 System.out.println("연산자를 잘못입력하였습니다.");
             }
+             */
+            switch (option){
+                case '+' :
+                    result = operation.add(num1, num2);
+                    break;
+                case '-' :
+                    result = operation.sub(num1, num2);
+                    break;
+                case '*' :
+                    result = operation.mul(num1, num2);
+                    break;
+                case '/' :
+                    result = operation.iMul(num1, num2);
+                    break;
+                default:
+                    System.out.println("연산자를 잘못입력하였습니다.");
+            }
             // 결과값을 도출합니다.
             System.out.println("결과는 : " + num1 + " " + option + " " + num2 + " = " + result);
+            System.out.println();
         }
     }
 
@@ -82,8 +101,8 @@ public class Calculator {
     }
 
     public static char getUserInputChar() {
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         return  s.charAt(0);
     }
 }
