@@ -18,6 +18,6 @@ public class Car extends Vehicle {
 
     public void displayInfo() {
         super.displayInfo();
-		System.out.println(" Æò±Õ¿¬ºñ : " + mileage + "km/l");
-	}
+        System.out.println(" í‰ê· ì—°ë¹„ : " + mileage + "km/l");
+    }
 }

@@ -1,11 +1,11 @@
 package ws1.java2.entity;
 
 public class Airplane extends Vehicle{
-	private String modelName;
-	private int maxSpeed;
-	private int numberLimit;
-	private int numOfEngine;
-	private boolean available;
+    private String modelName;
+    private int maxSpeed;
+    private int numberLimit;
+    private int numOfEngine;
+    private boolean available;
 
     public Airplane(String modelName, int maxSpeed, int numberLimit, int numOfEngine){
         super(modelName, maxSpeed, numberLimit);
@@ -18,6 +18,6 @@ public class Airplane extends Vehicle{
 
     public void displayInfo() {
         super.displayInfo();
-		System.out.println(" ¿£Áø°³¼ö : " + numOfEngine + "°³");
-	}
+        System.out.println(" ì—”ì§„ê°œìˆ˜ : " + numOfEngine + "ê°œ");
+    }
 }
