@@ -6,7 +6,6 @@ import java.util.List;
 public class DoctorTest {
 
     public static void main( String[] args ) {
-
         List<Dentist> dent = new ArrayList<Dentist>();
         List<Surgeon> surg = new ArrayList<Surgeon>();
 
@@ -17,19 +16,31 @@ public class DoctorTest {
         surg.add(new Surgeon("홍길순"));
         surg.add(new Surgeon("광개토"));
 
+        //TODO 의사 정보 출력
+/*
         for (int i = 0; i < dent.size(); i++) {
-            System.out.println(dent.get(i).toString());
+            System.out.println(dent.get(i));
             dent.get(i).treatPatient();
             dent.get(i).pullOutTooth();
         }
         for (int i = 0; i < surg.size(); i++) {
-            System.out.println(surg.get(i).toString());
+            System.out.println(dent.get(i));
             surg.get(i).treatPatient();
             surg.get(i).performSurgery();
         }
 
+ */
 
-        //TODO 의사 정보 출력
+        for(Dentist d : dent){
+            System.out.println(d);
+            d.treatPatient();
+            d.pullOutTooth();
+        }
 
+        for(Surgeon s : surg){
+            System.out.println(s);
+            s.treatPatient();
+            s.performSurgery();
+        }
     }
 }
