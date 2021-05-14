@@ -32,10 +32,10 @@ public class Account {
         if (money < 0) {
             throw new InvalidValueException("[에러] 출금할 금액은 0원 초과의 숫자로 입력하세요");
         }
-        balance -= money;
-        if (balance < 0) {
-            balance += money;
+        if (balance < money) {
             throw new InvalidValueException("[에러] 잔액이 부족합니다");
+        } else {
+            balance += money;
         }
     }
 
