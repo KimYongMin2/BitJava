@@ -30,6 +30,7 @@ public class AccountTest {
                         break;
                     case 2:     // 계좌 정보 출력
                         catchNull(acc);
+
                         System.out.println(acc);
                         break;
                     case 3:     // 입금

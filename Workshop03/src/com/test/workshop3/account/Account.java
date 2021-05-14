@@ -1,6 +1,5 @@
 package com.test.workshop3.account;
 
-import com.test.workshop3.exception.AccountNotFoundException;
 import com.test.workshop3.exception.InvalidValueException;
 
 public class Account {
