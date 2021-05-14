@@ -1,5 +1,7 @@
 package com.test.workshop3.account;
 
+import com.test.workshop3.exception.InvalidValueException;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -47,7 +49,7 @@ public class AccountTest {
 
                 //TODO catch 세분화 (각각의 예외 상황 별로)
             } catch ( Exception e ) {
-                System.out.println("에러발생");
+                System.out.println("..?");
 
             }
         }
