@@ -54,12 +54,10 @@ public class AccountTest {
                 }
 
                 //TODO catch 세분화 (각각의 예외 상황 별로)
-            } catch (InvalidValueException e) {
+            } catch (InvalidValueException | AccountNotFoundException e) {
                 System.out.println(e.getMessage());
             } catch (NumberFormatException e) {
                 System.out.println("숫자로 입력해야 합니다.");
-            } catch (AccountNotFoundException e) {
-                System.out.println(e.getMessage());
             }
 
         }
