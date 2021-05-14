@@ -42,5 +42,6 @@ public class DoctorTest {
             s.treatPatient();
             s.performSurgery();
         }
+
     }
 }
