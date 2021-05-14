@@ -4,70 +4,70 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class AccountTest {    
-    public static void main( String[] args ) {        
+public class AccountTest {
+    public static void main( String[] args ) {
         int menu  = 0;
         Account acc = null;
-        
-        while ( menu != 9 ) {            
-            printMenu();            
-            try {                
-                menu = Integer.parseInt(getUserInput());                
-                //TODO °¢ ¸Ş´º ¼±ÅÃ ½Ã ÇØ¾ß ÇÒ ÀÏ ±¸Çö
+
+        while ( menu != 9 ) {
+            printMenu();
+            try {
+                menu = Integer.parseInt(getUserInput());
+                //TODO ê° ë©”ë‰´ ì„ íƒ ì‹œ í•´ì•¼ í•  ì¼ êµ¬í˜„
                 switch ( menu ) {
-                case 1:     // °èÁÂ »ı¼º
-                    System.out.print( "\n°èÁÂ¹øÈ£ : " );
-                    String account = getUserInput();
-                    System.out.print( "¿¹±İÁÖ : " );
-                    String name = getUserInput();
-                    System.out.print( "ÃÖÃÊ ÀÔ±İ : " );
-                    int balance = getUserInputInt();
-                    acc = new Account(account, name,balance);
-                    break;
-                case 2:     // °èÁÂ Á¤º¸ Ãâ·Â
-                    System.out.println(acc.toString());
-                    break;
-                case 3:     // ÀÔ±İ
-                    System.out.print( "ÀÔ±İÇÒ ±İ¾× : " );
-                    int plusBalance = getUserInputInt();
-                    acc.deposit(plusBalance);
-                    break;
-                case 4:     // Ãâ±İ
-                    System.out.print( "Ãâ±İÇÒ ±İ¾× : " );
-                    int miBalance = getUserInputInt();
-                    acc.withdraw(miBalance);
-                    break;
-                case 9:     // Á¾·á
-                    System.out.println( "Á¾·áÇÕ´Ï´Ù." );
-                    break;
-                default:
-                    System.out.println( "[¿¡·¯] ¸Ş´º¸¦ Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù." );
-                    break;
+                    case 1:     // ê³„ì¢Œ ìƒì„±
+                        System.out.print( "\nê³„ì¢Œë²ˆí˜¸ : " );
+                        String account = getUserInput();
+                        System.out.print( "ì˜ˆê¸ˆì£¼ : " );
+                        String name = getUserInput();
+                        System.out.print( "ìµœì´ˆ ì…ê¸ˆ : " );
+                        int balance = getUserInputInt();
+                        acc = new Account(account, name,balance);
+                        break;
+                    case 2:     // ê³„ì¢Œ ì •ë³´ ì¶œë ¥
+                        System.out.println(acc.toString());
+                        break;
+                    case 3:     // ì…ê¸ˆ
+                        System.out.print( "ì…ê¸ˆí•  ê¸ˆì•¡ : " );
+                        int plusBalance = getUserInputInt();
+                        acc.deposit(plusBalance);
+                        break;
+                    case 4:     // ì¶œê¸ˆ
+                        System.out.print( "ì¶œê¸ˆí•  ê¸ˆì•¡ : " );
+                        int miBalance = getUserInputInt();
+                        acc.withdraw(miBalance);
+                        break;
+                    case 9:     // ì¢…ë£Œ
+                        System.out.println( "ì¢…ë£Œí•©ë‹ˆë‹¤." );
+                        break;
+                    default:
+                        System.out.println( "[ì—ëŸ¬] ë©”ë‰´ë¥¼ ì˜ëª» ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤." );
+                        break;
                 }
-                
-                //TODO catch ¼¼ºĞÈ­ (°¢°¢ÀÇ ¿¹¿Ü »óÈ² º°·Î)
+
+                //TODO catch ì„¸ë¶„í™” (ê°ê°ì˜ ì˜ˆì™¸ ìƒí™© ë³„ë¡œ)
             } catch ( Exception e ) {
-                System.out.println("¿¡·¯¹ß»ı");
-                
+                System.out.println("ì—ëŸ¬ë°œìƒ");
+
             }
         }
     }
-    
+
     private static void printMenu() {
-        System.out.println( "\n===== < ¸Ş´º > =====" );
-        System.out.println( " 1. °èÁÂ »ı¼º" );
-        System.out.println( " 2. °èÁÂ Á¤º¸ Ãâ·Â" );
-        System.out.println( " 3. ÀÔ±İ" );
-        System.out.println( " 4. Ãâ±İ" );
-        System.out.println( " 9. Á¾·á" );
+        System.out.println( "\n===== < ë©”ë‰´ > =====" );
+        System.out.println( " 1. ê³„ì¢Œ ìƒì„±" );
+        System.out.println( " 2. ê³„ì¢Œ ì •ë³´ ì¶œë ¥" );
+        System.out.println( " 3. ì…ê¸ˆ" );
+        System.out.println( " 4. ì¶œê¸ˆ" );
+        System.out.println( " 9. ì¢…ë£Œ" );
         System.out.println( "===================" );
-        System.out.print( ">> ¸Ş´º : " );
+        System.out.print( ">> ë©”ë‰´ : " );
     }
-    
-    public static String getUserInput() {        
+
+    public static String getUserInput() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String inputString = null;
-        
+
         try {
             inputString = br.readLine();
         } catch ( IOException e ) {

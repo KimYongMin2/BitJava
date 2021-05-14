@@ -2,12 +2,12 @@ package com.test.workshop3.doctor;
 
 public class Dentist extends Doctor {
     public Dentist(String name){
-        super(name, "Ä¡°ú");
+        super(name, "ì¹˜ê³¼");
 
     }
     void pullOutTooth(){
-        System.out.println("ÀÌ¸¦ »Ì½À´Ï´Ù.");
+        System.out.println("ì´ë¥¼ ë½‘ìŠµë‹ˆë‹¤.");
     }
-    
-    //TODO Doctor Å¬·¡½º »ó¼Ó ¹ŞÀº ÈÄ, Å¬·¡½º ¿Ï¼º
+
+    //TODO Doctor í´ë˜ìŠ¤ ìƒì† ë°›ì€ í›„, í´ë˜ìŠ¤ ì™„ì„±
 }

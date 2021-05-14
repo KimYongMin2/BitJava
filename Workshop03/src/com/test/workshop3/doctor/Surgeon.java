@@ -2,10 +2,10 @@ package com.test.workshop3.doctor;
 
 public class Surgeon extends Doctor{
     public Surgeon(String name){
-        super(name, "¿Ü°ú");
+        super(name, "ì™¸ê³¼");
     }
     void performSurgery(){
-        System.out.println("¼ö¼úÀ» ÁıµµÇÏ´Ù.");
+        System.out.println("ìˆ˜ìˆ ì„ ì§‘ë„í•˜ë‹¤.");
     }
-    //TODO Doctor Å¬·¡½º »ó¼Ó ¹ŞÀº ÈÄ, Å¬·¡½º ¿Ï¼º
+    //TODO Doctor í´ë˜ìŠ¤ ìƒì† ë°›ì€ í›„, í´ë˜ìŠ¤ ì™„ì„±
 }

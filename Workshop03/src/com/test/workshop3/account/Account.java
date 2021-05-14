@@ -3,33 +3,33 @@ package com.test.workshop3.account;
 import com.test.workshop3.exception.InvalidValueException;
 
 public class Account {
-    
+
     private String account;
     private String name;
     private int    balance;
-    
+
     public Account(String account, String name, int balance) throws InvalidValueException {
-        //TODO ÃÖÃÊ ÀÔ±İ ±İ¾×ÀÌ 0¿ø ÀÌÇÏÀÎ °æ¿ì, ¿¹¿Ü ¹ß»ı
+        //TODO ìµœì´ˆ ì…ê¸ˆ ê¸ˆì•¡ì´ 0ì› ì´í•˜ì¸ ê²½ìš°, ì˜ˆì™¸ ë°œìƒ
         if (balance < 0){
-            InvalidValueException ext = new InvalidValueException("À½¼ö´Â ÀÔ·ÂµÉ ¼ö ¾ø½À´Ï´Ù");
+            InvalidValueException ext = new InvalidValueException("ìŒìˆ˜ëŠ” ì…ë ¥ë  ìˆ˜ ì—†ìŠµë‹ˆë‹¤");
         }
         this.account = account;
         this.name    = name;
         this.balance = balance;
     }
-    
+
     public void deposit(int money) throws InvalidValueException {
-        //TODO ÀÔ±İÇÒ ±İ¾×ÀÌ Àß¸ø ÀÔ·ÂµÈ °æ¿ì, ¿¹¿Ü ¹ß»ı
+        //TODO ì…ê¸ˆí•  ê¸ˆì•¡ì´ ì˜ëª» ì…ë ¥ëœ ê²½ìš°, ì˜ˆì™¸ ë°œìƒ
         balance += money;
     }
-    
+
     public void withdraw(int money) throws InvalidValueException {
-        //TODO Ãâ±İÇÒ ±İ¾×ÀÌ Àß¸ø ÀÔ·ÂµÇ¾ú°Å³ª, ÀÜ¾×ÀÌ ºÎÁ·ÇÑ °æ¿ì ¿¹¿Ü ¹ß»ı
+        //TODO ì¶œê¸ˆí•  ê¸ˆì•¡ì´ ì˜ëª» ì…ë ¥ë˜ì—ˆê±°ë‚˜, ì”ì•¡ì´ ë¶€ì¡±í•œ ê²½ìš° ì˜ˆì™¸ ë°œìƒ
         balance -= money;
     }
-    
+
     @Override
     public String toString() {
-        return "[°èÁÂ] " + account + "\t[¿¹±İÁÖ] " + name + "\t[ÀÜ¾×] " + balance;
+        return "[ê³„ì¢Œ] " + account + "\t[ì˜ˆê¸ˆì£¼] " + name + "\t[ì”ì•¡] " + balance;
     }
 }
