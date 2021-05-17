@@ -1,4 +1,4 @@
-package com.test;
+package day10.test;
 public class Sample09 {
 	public static void main(String[] args) {
 		// boxing

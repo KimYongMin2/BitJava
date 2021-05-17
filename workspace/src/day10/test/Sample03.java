@@ -1,4 +1,5 @@
-package com.test;
+package day10.test;
+
 class Person {
 	long id;
 	Person(long id){

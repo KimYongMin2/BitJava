@@ -1,4 +1,4 @@
-package com.test;
+package day10.test;
 import java.lang.reflect.Method;
 class MyClass {
 	String name;

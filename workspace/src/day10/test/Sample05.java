@@ -1,4 +1,4 @@
-package com.test;
+package day10.test;
 class Student {
 	String name;
 	int age;
@@ -9,11 +9,11 @@ class Student {
 	public String toString() {
 		String str = this.name + ", " + this.age;
 		return str;
-	}	
+	}
 }
 public class Sample05 {
 	public static void main(String[] args) {
-		Student stu = new Student("ÀÌ¼ø½Å", 30);
+		Student stu = new Student("ì´ìˆœì‹ ", 30);
 		System.out.println(stu);
 
 	}

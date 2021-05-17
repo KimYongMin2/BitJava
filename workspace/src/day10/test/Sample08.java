@@ -1,21 +1,21 @@
-package com.test;
+package day10.test;
 public class Sample08 {
 	public static void main(String[] args) {
-		String msg1 = "ÀÌ¼ø½Å";
-		String msg2 = "°­°¨Âù";
+		String msg1 = "ì´ìˆœì‹ ";
+		String msg2 = "ê°•ê°ì°¬";
 		String msg3 = msg1 + msg2;
 		System.out.println(msg3);
-		
-		StringBuffer sb = new StringBuffer("ÀÌ¼ø½Å");
+
+		StringBuffer sb = new StringBuffer("ì´ìˆœì‹ ");
 		System.out.println(sb.capacity());
-		sb.append("°­°¨Âù");
-		sb.insert(1, "¼¼Á¾´ë¿Õ");
-		sb.replace(1, 3, "¾È³ç");
+		sb.append("ê°•ê°ì°¬");
+		sb.insert(1, "ì„¸ì¢…ëŒ€ì™•");
+		sb.replace(1, 3, "ì•ˆë…•");
 		sb.delete(1, 3);
 		System.out.println(sb.toString());
 		System.out.println(sb.capacity());
-		
-		
-		
+
+
+
 	}
 }

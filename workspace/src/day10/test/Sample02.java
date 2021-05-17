@@ -1,4 +1,4 @@
-package com.test;
+package day10.test;
 
 class MyCustomException extends Exception {
 	MyCustomException(String msg){
@@ -10,7 +10,7 @@ public class Sample02 {
 		int a = 10;
 		if(a == 10) {
 			try {
-				throw new MyCustomException("a == 10¿Ã ∞∞¥Ÿ.");
+				throw new MyCustomException("a == 10Ïù¥ Í∞ôÎã§.");
 			} catch(MyCustomException ex) {
 				System.out.println(ex.getMessage());
 			}

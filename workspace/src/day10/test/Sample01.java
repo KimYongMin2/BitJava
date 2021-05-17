@@ -1,7 +1,7 @@
-package com.test;
+package day10.test;
 public class Sample01 {
 	static void method1() throws Exception {
-		int b = 10/0;		
+		int b = 10/0;
 	}
 	static void method2() throws Exception {
 		method1();
@@ -18,7 +18,7 @@ public class Sample01 {
 //		} catch(ArithmeticException ex) {
 //			System.out.println(ex.getMessage());
 //		} catch(Exception ex) {
-//			System.out.println("±×¿ÜÀÇ ¿¹¿Ü");
+//			System.out.println("ê·¸ì™¸ì˜ ì˜ˆì™¸");
 //		} finally {
 //			System.out.println("End");
 //		}

@@ -3,7 +3,7 @@ package com.test;
 public class Sample07 {
 
 	public static void main(String[] args) {
-		String msg = "¾È³çÇÏ¼¼¿ä.¹Ý°¡¿ö¿ä.";
+		String msg = "ì•ˆë…•í•˜ì„¸ìš”.ë°˜ê°€ì›Œìš”.";
 		char c = msg.charAt(1);
 		System.out.println(c);
 		String msg1 = "abcdefgABCD";
@@ -11,7 +11,7 @@ public class Sample07 {
 		System.out.println(c2);
 		int n = (int)c2;
 		System.out.println(n);
-		String msg2 = "  ¹Ý°¡¿ö¿ä  ";
+		String msg2 = "  ë°˜ê°€ì›Œìš”  ";
 		System.out.println(msg2.length());
 		System.out.println(msg2.trim().length());
 		System.out.println(msg2.trim());
@@ -26,8 +26,8 @@ public class Sample07 {
 		System.out.println(tel.substring(0,3));
 		System.out.println(tel.substring(4,7));
 		System.out.println(tel.substring(3));
-		char c3 = "¹æ°¡¿ö¿ä".charAt(0);
-	
+		char c3 = "ë°©ê°€ì›Œìš”".charAt(0);
+
 	}
 
 }

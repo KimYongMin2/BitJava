@@ -1,4 +1,4 @@
-package com.test;
+package day10.test;
 class CustomWrapperType {
 	private int i;
 	CustomWrapperType(int i){
