@@ -2,7 +2,37 @@ package ws1.java2.controller;
 
 import ws1.java2.entity.*;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class VehicleManager {
+    ArrayList vehicle = new ArrayList();
+    public VehicleManager() {
+        vehicle.add(new Airplane("보잉747", 1300, 300, 4));
+        vehicle.add(new Airplane("F-15", 1600, 1, 1));
+        vehicle.add(new Car("그랜저", 180, 5, 10));
+        vehicle.add(new Car("스파크", 130, 4, 15));
+        vehicle.add(new Car("스타렉스", 150, 10, 11));
+        vehicle.add(new Ship("크루즈2", 30, 400, 35000));
+        vehicle.add(new Ship("노틸러스", 25, 150, 15000));
+
+    }
+    public void displayVehicles(String title) {
+        System.out.println(title);
+        for (int i = 0; i < vehicle.size(); i++){
+            Vehicle v = (Vehicle)vehicle.get(i);
+            v.displayInfo();
+            v.setAvailable(true);
+        }
+        System.out.println();
+
+        Iterator iterator = vehicle.iterator();
+        while (iterator.hasNext()){
+            Vehicle v = (Vehicle)iterator.next();
+            v.displayInfo();
+            v.setAvailable(true);
+        }
+    }
     /*
     Airplane[] airplaneArr;
     Car[] carArr;
@@ -46,7 +76,7 @@ public class VehicleManager {
     }
 }
     */
-
+/*
     Vehicle[] vehicle;
 
     public VehicleManager() {
@@ -68,5 +98,7 @@ public class VehicleManager {
         }
         System.out.println();
     }
+
+ */
 }
 
