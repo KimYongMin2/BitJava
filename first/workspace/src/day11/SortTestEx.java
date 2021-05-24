@@ -1,7 +1,6 @@
 package day11;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 class MyElement implements Comparable{
     private int i;

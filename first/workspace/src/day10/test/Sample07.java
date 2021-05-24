@@ -1,4 +1,4 @@
-package com.test;
+package day10.test;
 
 public class Sample07 {
 
